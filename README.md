@@ -1,4 +1,4 @@
-# gonode Adonis API REST application
+# gonode AdonisJS (API REST) application
 
 This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
 
