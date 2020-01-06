@@ -48,9 +48,9 @@ class ForgotPasswordController {
         .isAfter(user.token_created_at)
 
       if (tokenExpired) {
-        return response.status(401).send({
-          error: { message: 'O token de recuperação esta expirado' }
-        })
+        return response
+          .status(401)
+          .send({ error: { message: 'O token de recuperação esta expirado' } })
       }
 
       user.token = null
