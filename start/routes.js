@@ -16,4 +16,6 @@ Route.group(() => {
 
   // Route.get('/projects', 'ProjectController.index')
   Route.resource('projects', 'ProjectController').apiOnly()
+
+  Route.resource('projects.tasks', 'TaskController').apiOnly()
 }).middleware(['auth'])
