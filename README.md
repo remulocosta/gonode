@@ -25,3 +25,17 @@ Run the following command to run startup migrations.
 ```js
 adonis migration:run
 ```
+
+### Queue
+
+Fazendo uso do Redis banco de dados chave valor no Docker
+
+```bash
+docker run --name redisGoNode -p 6379:6379 -d -t redis:alpine
+```
+
+Run the following command to run Kue queue
+
+```bash
+adonis kue:listen
+```
